@@ -147,3 +147,4 @@ The system supports the following department types for complaints:
 ## License
 
 This project is licensed under the MIT License.
+    
