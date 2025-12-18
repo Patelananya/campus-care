@@ -1,0 +1,180 @@
+.landing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
+  padding: 20px;
+}
+
+.landing-content {
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.welcome-title {
+  color: #4361ee;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.landing-description {
+  color: #6c757d;
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portal-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.portal-card {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  width: 300px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.portal-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.student-icon {
+  background-color: rgba(67, 97, 238, 0.1);
+  color: #4361ee;
+}
+
+.manager-icon {
+  background-color: rgba(67, 204, 108, 0.1);
+  color: #43cc6c;
+}
+
+.admin-icon {
+  background-color: rgba(114, 9, 183, 0.1);
+  color: #7209b7;
+}
+
+.portal-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.student-card h3 {
+  color: #4361ee;
+}
+
+.manager-card h3 {
+  color: #43cc6c;
+}
+
+.admin-card h3 {
+  color: #7209b7;
+}
+
+.card-description {
+  color: #6c757d;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.card-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+}
+
+.card-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.student-button {
+  background-color: #4361ee;
+  color: white;
+}
+
+.student-button:hover {
+  background-color: #3a56d4;
+}
+
+.manager-button {
+  background-color: #43cc6c;
+  color: white;
+}
+
+.manager-button:hover {
+  background-color: #3ab860;
+}
+
+.admin-button {
+  background-color: #7209b7;
+  color: white;
+}
+
+.admin-button:hover {
+  background-color: #6508a0;
+}
+
+@media (max-width: 992px) {
+  .portal-cards {
+    gap: 1.5rem;
+  }
+  
+  .portal-card {
+    width: 280px;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-title {
+    font-size: 2rem;
+  }
+  
+  .landing-description {
+    font-size: 1.1rem;
+  }
+  
+  .portal-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portal-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
